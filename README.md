@@ -16,9 +16,9 @@
 - 📖 Bald möchte ich einen Kurs über **KI für Frauen** anbieten  
 
 ## 📬 Wo du mich findest  
-- 💼 LinkedIn: [Dein Link](https://www.linkedin.com/)  
-- 🌍 Website: [www.deinedomain.de](https://www.deinedomain.de)  
-- ✉️ E-Mail: [Deine E-Mail]  
+- 💼 LinkedIn: [Dein Link](https://www.linkedin.com/company/she-does-ki)  
+- 🌍 Website: [www.deinedomain.de](https://www.she-does-ki.de)  
+- ✉️ E-Mail: a.halamoda@shedoeski.de 
 
 ---
 💡 **Diese README ist für mein GitHub-Projekt! Schau dir gerne an, woran ich arbeite.** 🚀  
