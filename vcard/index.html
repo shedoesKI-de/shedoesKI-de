@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anne-Marie Halamoda – Visitenkarte</title>
+  <style>
+    /* Seite */
+    body {
+      margin: 0;
+      padding: 40px;
+      background-color: #FAF3E0; /* Beige */
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    /* Karte */
+    .card {
+      background-color: #FFFFFF;
+      width: 350px;
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    /* Name */
+    .name {
+      margin: 0;
+      font-size: 1.6rem;
+      color: #1B2528; /* Fast Schwarz */
+    }
+    /* Position und Firma */
+    .title, .company {
+      margin: 4px 0;
+      font-size: 1rem;
+      color: #3E4E50; /* Blaugrau */
+    }
+    /* Kontaktlinks */
+    .contact {
+      margin: 16px 0;
+      font-size: 0.95rem;
+      color: #2E3A40; /* Tiefes Blau */
+      word-wrap: break-word;
+    }
+    .contact a {
+      color: #5C6B70; /* Dunkles Blaugrau */
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    /* Download-Button */
+    .download {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #C4A484; /* Warmes Braun */
+      color: #FFFFFF;
+      text-decoration: none;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .download:hover {
+      background-color: #8B6F47; /* Dunkles Beige */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1 class="name">Anne-Marie Halamoda</h1>
+    <p class="title">Geschäftsführung</p>
+    <p class="company">She does KI</p>
+
+    <div class="contact">
+      <p><a href="mailto:a.halamoda@shedoeski.de">a.halamoda@shedoeski.de</a></p>
+      <p><a href="https://www.linkedin.com/company/she-does-ki/about/" target="_blank" rel="noopener">LinkedIn: She does KI</a></p>
+    </div>
+
+    <!-- Download-Link für VCard -->
+    <a id="downloadLink" class="download" download="Anne-Marie_Halamoda.vcf">
+      VCard herunterladen
+    </a>
+  </div>
+
+  <script>
+    // VCard-Inhalt
+    const vcard = [
+      'BEGIN:VCARD',
+      'VERSION:3.0',
+      'N:Halamoda;Anne-Marie;;;',
+      'FN:Anne-Marie Halamoda',
+      'TITLE:Geschäftsführung',
+      'ORG:She does KI',
+      'EMAIL;TYPE=INTERNET:a.halamoda@shedoeski.de',
+      'URL:https://www.linkedin.com/company/she-does-ki/about/',
+      'END:VCARD'
+    ].join('\r\n');
+
+    // Blob erzeugen und Link setzen
+    const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    document.getElementById('downloadLink').href = url;
+  </script>
+
+</body>
+</html>
