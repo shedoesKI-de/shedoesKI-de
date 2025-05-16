@@ -1,0 +1,14 @@
+# Allgemeine Seiten-Infos
+title: "She does KI"
+description: "Mental Load & smarte KI-Hacks für den Mama-Alltag"
+
+# Basis-Pfad, falls du die Seite unter https://USERNAME.github.io/REPO/ laufen hast:
+# baseurl: "/she-does-ki-site"
+
+# Autor und Kontakt (kannst du nutzen, wenn du in deinen Layouts darauf zugreifst)
+author:
+  name: "Amy Halamoda"
+  email: "a.halamoda@shedoeski.de"
+
+# Keine Theme-Aktivierung, weil du eigene Layouts nutzt
+theme: null
