@@ -82,7 +82,9 @@
           background-color: #5C6B70;  /* dunkler Ton */
           padding: 20px;
           position: sticky;
-          top: 300px;
+          top: 0;
+          padding-top: 200px;
+          box-sizing: border-box;
           height: 100vh;
           overflow-y: auto;
           font-family: 'Lora', serif;
