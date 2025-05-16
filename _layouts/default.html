@@ -8,17 +8,19 @@
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+
+
+  <!-- Layout: Sidebar + Content -->
+  <div class="layout">
+    {% include sidebar.html %}
+    
   <!-- Header mit Logo -->
   <header class="content-header">
     <a href="/">
       <img src="/assets/img/logo.png" alt="She does KI Logo" class="logo">
     </a>
   </header>
-
-  <!-- Layout: Sidebar + Content -->
-  <div class="layout">
-    {% include sidebar.html %}
-
+    
     <main class="content">
       {{ content }}    <!-- Hier kommt jede Seiten-Content rein -->
     </main>
