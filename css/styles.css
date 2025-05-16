@@ -52,11 +52,10 @@
             border-radius: 5px;
         }
         footer {
-            background-color: #5C6B70;
+            background-color: #3E4E50;
             color: white;
             text-align: center;
             padding: 20px;
-            margin-top: 40px;
         }
         footer a {
             color: #FAF3E0;
@@ -76,7 +75,7 @@
         /* Sidebar-Styles */
         .sidebar {
           width: 300px;               /* fixe Breite */
-          background-color: #5C6B70;  /* dunkler Ton */
+          background-color: #3E4E50;  /* dunkler Ton */
           padding: 20px;
           position: sticky;
           top: 0;
