@@ -73,17 +73,79 @@
         footer a:hover {
             text-decoration: underline;
         }
-    </style>
-</head>
-<body>
-    <header>
-      <a href="/">
-        <img src="assets/img/logo.png" alt="She does KI Logo" class="logo"
-          alt = "She does KI"
-          class = "logo">
-      </a>
+
+        /* Gesamt-Layout:  sidebar + content */
+        .layout {
+          display: flex;
+          min-height: 100vh;
+        }
+        
+        /* Sidebar-Styles */
+        .sidebar {
+          width: 200px;               /* fixe Breite */
+          background-color: #5C6B70;  /* dunkler Ton */
+          padding: 20px;
+        }
+        .sidebar nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+        .sidebar nav li + li {
+          margin-top: 10px;
+        }
+        .sidebar a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        
+        /* Hauptinhalt nimmt den Rest */
+        .content {
+          flex: 1;
+        }
+        
+        /* Responsive: auf kleinen Bildschirmen Sidebar verstecken */
+        @media(max-width: 768px) {
+          .layout {
+            flex-direction: column;
+          }
+          .sidebar {
+            display: none;
+          }
+        }
+        
+            </style>
+        </head>
+        <body>
+            <header>
+              <a href="/">
+                <img src="assets/img/logo.png" alt="She does KI Logo" class="logo"
+                  alt = "She does KI"
+                  class = "logo">
+              </a>
     </header>
+            
+          <div class="layout">
+        <aside class="sidebar">
+          <nav>
+            <ul>
+              <li><a href="index.html">Start</a></li>
+              <li><a href="ki-hilfe.html">KI-Hilfe</a></li>
+              <li><a href="ueber-mich.html">Über mich</a></li>
+              <li><a href="social.html">Social</a></li>
+            </ul>
+          </nav>
+        </aside>
     
+        <main class="content">
+          <header>…</header>
+          <div class="hero">…</div>
+          <div class="section" id="ki-hilfe">…</div>
+          <!-- usw. -->
+        </main>
+      </div>
+            
     <div class="hero">
         <h1>Die unsichtbare Last des Alltags</h1>
         <h2>Der Mental Load ist allgegenwärtig – vor allem bei Frauen</h2>
