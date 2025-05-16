@@ -110,6 +110,7 @@
           text-align: center;
           background-color: #3E4E50;
           padding: 40px 20px;
+          z-index: 1000;
         }
         
         /* Responsive: auf kleinen Bildschirmen Sidebar verstecken */
@@ -140,7 +141,7 @@
             top: 15px;
             right: 15px;
             font-size: 2rem;
-            z-index: 1001;
+            z-index: 2001;
           }
           .sidebar {
            display: none;
@@ -153,9 +154,12 @@
             width: 300px;
             height: 100vh;
             background-color: #5C6B70;
+            padding: 200px 20px 20px;
+            box-sizing: border-box;
             overflow-y: auto;
-            transition: transform 0.3s;
+            transition: right 0.3s ease;
             transform: translateX(0);
+            z-index: 2000;
           }
           body.nav-open {
             overflow: hidden;
