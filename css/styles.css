@@ -10,7 +10,6 @@
             align-items: center;
             background-color: #3E4E50;
             padding: 40px 20px;
-            text-align: center;
         }
         header .logo{
             display: block;
@@ -101,6 +100,12 @@
         /* Hauptinhalt nimmt den Rest */
         .content {
           flex: 1;
+        }
+
+        .content header {
+          text-align: center;
+          background-color: #3E4E50;
+          padding: 40px 20px;
         }
         
         /* Responsive: auf kleinen Bildschirmen Sidebar verstecken */
