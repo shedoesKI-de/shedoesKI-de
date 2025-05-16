@@ -1,0 +1,34 @@
+<!-- _layouts/default.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | She does KI</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Header mit Logo -->
+  <header class="content-header">
+    <a href="/">
+      <img src="/assets/img/logo.png" alt="She does KI Logo" class="logo">
+    </a>
+  </header>
+
+  <!-- Layout: Sidebar + Content -->
+  <div class="layout">
+    {% include sidebar.html %}
+
+    <main class="content">
+      {{ content }}    <!-- Hier kommt jede Seiten-Content rein -->
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 She does KI |
+    <a href="/vcard/">Kontakt</a> |
+    <a href="/impressum.html">Impressum</a>
+  </footer>
+</body>
+</html>
