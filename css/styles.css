@@ -10,11 +10,7 @@
             background-color: #FAF3E0;
             color: #444;
         }
-        header {
-            align-items: center;
-            background-color: #3E4E50;
-            padding: 40px 20px;
-        }
+
         header .logo{
             display: block;
             margin: 0 auto;
@@ -80,10 +76,9 @@
         .sidebar {
           width: 300px;               /* fixe Breite */
           background-color: #5C6B70;  /* dunkler Ton */
-          padding: 20px;
           position: sticky;
           top: 0;
-          padding-top: 200px;
+          padding-top: 200px 40px 40px;
           box-sizing: border-box;
           height: 100vh;
           overflow-y: auto;
@@ -110,6 +105,7 @@
         }
 
         .content header {
+          position: relative;  /*ggf wieder löschen*/
           text-align: center;
           background-color: #3E4E50;
           padding: 40px 20px;
